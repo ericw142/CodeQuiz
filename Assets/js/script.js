@@ -34,12 +34,11 @@ function createQuiz(){
   // Timer
   if (e === 0){
   setInterval(myTimer, 1000);
+  startbtn.setAttribute('style','display:none');
   }
   if (questions[e] === undefined) {
     // Set score equal to time
     localStorage.setItem('score', startingTime);
-    var username = prompt('Please enter your initials');
-    localStorage.setItem('username', username);
     // Change to Highscore Page
     window.location.href = 'highscore.html';
   }
@@ -50,7 +49,7 @@ function createQuiz(){
 function myTimer() {
   if (startingTime >0) {
     startingTime--;
-    timer.textContent = startingTime;
+    timer.textContent = "Timer: " + startingTime;
   } else {
     clearInterval();
   }
@@ -62,6 +61,7 @@ function createAnswers(index) {
   for (var i = 0; i < questions[index].choices.length; i++) {
     var a = document.createElement('button');
     a.textContent = questions[index].choices[i];
+    a.className += 'btn btn-primary';
     a.addEventListener('click', function(){
       if (this.textContent === questions[index].answer) {
         resultDisplay.textContent = "Correct!";
@@ -117,4 +117,3 @@ function pageReset() {
 
 // Adding initial event listeners
 startbtn.addEventListener("click", createQuiz);
-resetbtn.addEventListener('click', pageReset);

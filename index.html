@@ -14,26 +14,21 @@
 </head>
 <body>
     <!-- Highscores Page Link -->
-    <a href="highscore.html">Highscores</a>
-    <!-- Timer Display -->
-    <h4>Timer</h4>
-    <span id="timer">75</span>
-    <!-- Start button that begins the quiz -->
-    <button id="startQuizbtn">Start Quiz</button>
-    <button id="reset">Reset</button>
-    <!-- Question -->
-    <div id="quiz-div">
+    <a href="assets/highscore.html">Highscores</a>
+    
+    <!-- Quiz Container -->
+    <div id="quiz-div" class="container">
+        <!-- Timer -->
+        <span id="timer">Timer: 75</span>
+        <!-- Start Button -->
+        <button id="startQuizbtn" class="btn btn-primary">Start Quiz</button>
         <span id="q-span"></span>
         <div id="answer-div">
             
         </div>
             <span id='result'></span>
     </div>
-    <!-- Four Answers displayed on buttons -->
-
-    <!-- Display span that tells you if the last answer was correct or wrong -->
-
-    <!-- Once quiz ends, sends user to highscore.html -->
+    
     <script src="js/script.js"></script>
 </body>
 </html>

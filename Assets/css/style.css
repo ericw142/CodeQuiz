@@ -1,0 +1,18 @@
+#timer {
+    float: right;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 70px;
+    background-color: rgb(187, 187, 187);
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+/* Highscore Page Styles */
+

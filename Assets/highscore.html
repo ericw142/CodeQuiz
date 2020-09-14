@@ -9,14 +9,21 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Div containing highscores stored locally -->
-    <div id="highscoreDiv"></div>
-    <!-- Button to go back to homepage -->
-    <a href="index.html">Back</a>
-    <!-- Button to erase highscores -->
-    <button id='erase'>Erase Highscores</button>
+    <div class="container">
+        <!-- Div containing highscores stored locally -->
+        <div id="highscoreDiv"></div>
+        <!-- Button to go back to homepage -->
+        <a href="index.html">Back</a>
+        <!-- Button to erase highscores -->
+        <input type="text" id="user" placeholder="Write your initials here...">
+        <input type="submit" id="submit" class="btn btn-primary">
+        <button id='erase' class="btn btn-primary">Erase Highscores</button>
+    </div>
+    
     <script onload src="js/highscoreScript.js"></script>
 </body>
 </html>
