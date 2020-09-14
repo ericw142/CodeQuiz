@@ -40,7 +40,7 @@ function createQuiz(){
     // Set score equal to time
     localStorage.setItem('score', startingTime);
     // Change to Highscore Page
-    window.location.href = 'highscore.html';
+    window.location.href = 'assets/highscore.html';
   }
   questionDisplay.textContent = questions[e].title;
   createAnswers(e);
