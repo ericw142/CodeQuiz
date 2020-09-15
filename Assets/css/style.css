@@ -7,12 +7,35 @@
 .container {
     text-align: center;
     margin-top: 70px;
-    background-color: rgb(187, 187, 187);
+}
+
+#q-span {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#result {
+    font-style: italic;
 }
 
 .btn {
     margin-left: 10px;
+    background-color: blueviolet;
+    border: blueviolet;
+}
+
+.btn:hover {
+    background-color: rgb(83, 43, 226);
+    border: rgb(83, 43, 226);
+}
+
+a {
+    color: blueviolet;
 }
 
 /* Highscore Page Styles */
 
+p {
+    background-color: rgb(95, 95, 95);
+    color: ivory;
+}
