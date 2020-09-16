@@ -1,42 +1,25 @@
-# 04 Web APIs: Code Quiz
+Homework Assignment due Wednesday, September 16, 2020 11:59 PM
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+The goal of this assignment was to build a timed, multiple choice quiz application that dynamically updates its' HTML, is responsive to screen size, and stores scores in local storage
+on the highscores page. In order to accomplish this, I first created a basic html structure on the index.html and highscore.html pages, with divs and spans to contain the elements
+that I would create dynamically. I used BootStrap classes to ensure every element is responsive. 
 
-## User Story
+The script.js file contains the Javascript that runs the quiz, and the highscoreScript.js file contains the code that manages highscores in local storage.
+In script.js, I created variables to contain all of the data for the quiz, as well as to select specific elements on the page. I have a function to start the quiz, manage the timer, to create the answer buttons dynamically, to update the question and answer buttons, and to reset the entire page if needed.
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+As you go through the quiz, the page will update a span with the question, then create buttons with the text of all of the corrosponding choices. Once you choose an answer, it will compare the
+text to the correct answer, and if they match, it will display "Correct!" and then update to the next question. If you choose a button with text that does not match the answer, it will display "Incorrect!", subtract 25 seconds from the timer, and then update to the next question. 
 
-## Acceptance Criteria
+At the end of the quiz, it will store your remaining time into local storage as 'score'. Then, the page will change to the highscore page.
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+On page load, the highscoreScript.js file will check if you have any previously saved scores and display them. There is a text input for the user to input their initials, and when they click submit, the page udpates the highscore div to include their new score and initials. The highscores are stored first into an array, and then added to a stringified array within local storage.
+This way, the page saves an array in local storage that includes all previous highscore entires. 
 
-The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+GitHub Repository: https://github.com/ericw142/CodeQuiz
 
-### Review
+GitHub Pages: https://ericw142.github.io/CodeQuiz/
 
-You are required to submit the following for review:
+![Quiz Application](/Assets/images/homepage.png?raw=true "Quiz Application")
 
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![Highscores](/Assets/images/highscores.png?raw=true "Highscores")
