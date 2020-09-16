@@ -20,6 +20,10 @@ GitHub Repository: https://github.com/ericw142/CodeQuiz
 
 GitHub Pages: https://ericw142.github.io/CodeQuiz/
 
+Quiz Page
+
 ![Quiz Application](/Assets/images/homepage.png?raw=true "Quiz Application")
+
+Highscore Page
 
 ![Highscores](/Assets/images/highscores.png?raw=true "Highscores")
